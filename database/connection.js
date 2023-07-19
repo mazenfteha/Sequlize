@@ -13,7 +13,7 @@ db.authenticate()
     console.error('Unable to connect to the database:', error);
 })
 
-db.sync({ force: false, logging: false, alter: true})
+db.sync({ force: false, logging: false})
 .then(()=> {
     console.log('Database has been syncronized successfully.');
 })
